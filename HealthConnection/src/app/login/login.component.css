@@ -1,0 +1,54 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+.background-image {
+  background-image: url("src\img\principal.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+#typeEmailX,
+#typePasswordX {
+  font-size: 16px; /* Cambia el tamaño de la fuente según tus preferencias */
+}
+
+.card {
+  margin: -20px 400px;
+}
+
+.a{
+  margin: -20px, 350px;
+}
+.form-label{
+  color: white;
+}
+
+h2 {
+  font-size: 2rem; /* Cambia el tamaño del título */
+  color: white; /* Cambia el color del texto a blanco */
+}
+
+.form-control {
+  background-color: rgba(169,169,169, 1); /* Fondo con transparencia */
+  color: #fff; /* Texto en blanco */
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Esquinas redondeadas */
+}
+
+.btn{
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover{
+  background-color: white;
+   color: blue;
+}
+
+a{
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;/* Subrayado al pasar el mouse */
+  text-decoration-color: rgb(173, 169, 169);
+}

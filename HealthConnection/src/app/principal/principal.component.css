@@ -1,0 +1,60 @@
+@import "~bootstrap/dist/css/bootstrap.css";
+.menu-container {
+    background-color: #333; /* Fondo oscuro */
+    color: #fff; /* Texto en blanco */
+    width: 250px; /* Ancho deseado */
+    position: fixed; /* Fija la posición para que el menú se desplace con la página */
+    height: 100%; /* Ocupa toda la altura disponible */
+    overflow-y: auto; /* Agrega desplazamiento vertical si el contenido del menú es largo */
+}
+
+/* Estilo de la lista desordenada del menú */
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilo de los elementos de menú */
+.menu li {
+    padding: 10px;
+}
+
+/* Estilo de los enlaces de menú */
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    display: block; /* Los enlaces ocupan todo el ancho del contenedor */
+}
+
+/* Cambia el color de fondo al pasar el ratón por encima de los enlaces */
+.menu a:hover {
+    background-color: #555;
+}
+
+/* Estilo para el menú desplegable */
+.submenu {
+    display: none;
+    background-color: #333; /* Fondo oscuro para el menú desplegable */
+}
+
+/* Mostrar el menú desplegable cuando está abierto */
+.submenu-open {
+    display: block;
+}
+
+.submenu li {
+    padding: 10px;
+}
+
+.submenu a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+}
+
+.submenu a:hover {
+    background-color: #555;
+}
+
+

@@ -1,0 +1,30 @@
+<div class="menu-container">
+    <nav class="menu">
+        <ul>
+            <li><a href="login/principal/{{id}}" class="inicio">Inicio</a></li>
+            <li class="prod">
+                <a   class="linkprod" (click)="toggleMenu()">Perfil</a>
+                <ul class="submenu" [ngClass]="{ 'submenu-open': isMenuOpenPerfil }">
+                    <li><a href="login/principal/editarPerfil/{{id}}">Editar Perfil</a></li>
+                    <li><a  href="login/principal/{{id}}" (click)="eliminar()">Eliminar Perfil</a></li>
+                    <li><a href="#">Consultar Perfil</a></li>
+                    <li><a  (click)="logout()">logout</a></li>
+                </ul>
+            </li>
+            <li class="prod">
+                <a   class="linkprod" (click)="toggleMenuS()">Agenda</a>
+                <ul class="submenu" [ngClass]="{ 'submenu-open': isMenuOpenAgenda }">
+                    <li><a href="principal/crearAgenda" >Crear Agenda</a></li>
+                    <li><a  href="#" >Consultar Agenda</a></li>
+                </ul>
+            </li>
+            <li><a href="#">Quiénes Somos</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
+</div>
+<div class="vh-100 gradient-custom background-image">
+    
+</div>
+
+

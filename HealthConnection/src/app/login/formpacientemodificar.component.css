@@ -1,0 +1,44 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+.background-image {
+    background-image: url("src\img\fondo_registro.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: list-item;
+  }
+
+  #id{
+    color: rgb(2, 50, 34);
+  }
+  h5{
+    font-size: 2rem; /* Cambia el tamaño del título */
+    color: white; /* Cambia el color del texto a blanco */
+  }
+  .btn{
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover{
+    background-color: rgb(106, 192, 67);
+     color: rgb(239, 242, 240);
+  }
+  .form-down{
+    color: rgb(11, 2, 50);
+  }
+  .card {
+    margin: -20px 400px;
+    background-color:white;
+  }
+
+  .card {
+    margin: 0px 350px;
+  }
+.col-form-label{
+    color: rgb(2, 9, 13);
+    font-weight: bold;
+}
+.form-group{
+    background-color: rgb(248, 246, 246);
+}

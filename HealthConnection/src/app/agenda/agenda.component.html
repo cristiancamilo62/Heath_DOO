@@ -1,0 +1,25 @@
+<div class="vh-100 gradient-custom background-image">
+<form>
+    <label for="tipoServicio">Tipo de Servicio:</label>
+    <select id="tipoServicio" name="tipoServicio" [(ngModel)]="agenda.profesionalSalud.servicio.nombre" (change)="consultar()">
+      <option value="Cirugía Ortopédica">Cirugía Ortopédica</option>
+      <option value="Consulta General">Consulta General</option>
+    </select>
+    
+    <label for="profesionalSalud">Profesional de Salud:</label>
+    <select id="profesionalSalud" name="profesionalSalud" [(ngModel)]="agenda.profesionalSalud.nombreCompletoProfesionalSalud.primerNombre">
+      <option *ngFor="let profesional of profesionalesDeSalud" [value]="profesional.nombreCompletoProfesionalSalud.primerNombre">{{ profesional.nombreCompletoProfesionalSalud.primerNombre }}</option>
+    </select>
+    
+    <label for="fechaInicio">Fecha de Inicio:</label>
+    <input type="text" id="fechaInicio" name="fechaInicio" [(ngModel)]="agenda.fechaInicio">
+    
+    <label for="fechaFin">Fecha de Fin:</label>
+    <input type="text" id="fechaFin" name="fechaFin" [(ngModel)]="agenda.fechaFin">
+    
+    <label for="precioServicio">Precio del Servicio:</label>
+    <input type="number" id="precioServicio" name="precioServicio" [(ngModel)]="agenda.precioServicio">
+    
+    <button type="button" (click)="registrarCita()">Enviar</button>
+  </form>
+</div>

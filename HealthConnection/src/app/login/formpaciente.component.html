@@ -1,0 +1,77 @@
+<section class="background-image">
+<div class="container form-down">
+    <div class="card">
+        <div class="card-body ">
+            <h5 class="card-title">{{titulo}}</h5>
+            <form>
+                <div class="form-group row">
+                    <label for="numeroIdentificacion" class="col-sm-6 col-form-label">Número de Identificación</label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control" name="numeroIdentificacion" [(ngModel)]="paciente.numeroIdentificacion">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="primerNombre" class="col-sm-6 col-form-label">Primer Nombre</label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control" name="primerNombre" [(ngModel)]="paciente.nombreCompletoPaciente.primerNombre">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="segundoNombre" class="col-sm-6 col-form-label">Segundo Nombre</label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control" name="segundoNombre" [(ngModel)]="paciente.nombreCompletoPaciente.segundoNombre">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="primerApellido" class="col-sm-6 col-form-label">Primer Apellido</label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control" name="primerApellido" [(ngModel)]="paciente.nombreCompletoPaciente.primerApellido">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="segundoApellido"  class="col-sm-6 col-form-label">Segundo Apellido</label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control" name="segundoApellido" [(ngModel)]="paciente.nombreCompletoPaciente.segundoApellido">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="tipoIdentificacion" class="col-sm-6 col-form-label">Tipo Identificación</label>
+                    <div class="col-sm-8">
+                        <select class="form-control" name="tipoIdentificacion" [(ngModel)]="paciente.tipoIdentificacion.codigo">
+                            <option value="CC">Cédula de Ciudadanía</option>
+                            <option value="TI">Tarjeta de Identidad</option>
+                            <option value="PP">Pasaporte</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="correoElectronico" class="col-sm-6 col-form-label">Correo Electrónico</label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control" name="correoElectronico" [(ngModel)]="paciente.contactoPaciente.correoElectronicoPaciente.correoElectronico">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="correoElectronico" class="col-sm-6 col-form-label">contraseña</label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control" name="correoElectronico" [(ngModel)]="paciente.contactoPaciente.contrasenia">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="fechaNacimiento" class="col-sm-6 col-form-label">Fecha de Nacimiento</label>
+                    <div class="col-sm-8">
+                        <input type="date" class="form-control" id="fechaNacimiento" name="fechaNacimiento" [(ngModel)]="paciente.fechaNacimiento">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="numeroTelefono" class="col-sm-6 col-form-label">Numero de Telefono</label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control" id="numeroTelefono" name="numeroTelefono" [(ngModel)]="paciente.contactoPaciente.numeroTelefonoPaciente.numeroTelefono">
+                    </div>
+                </div>
+                <br>
+                <button class="btn btn-success" role="button" (click)="create()">Registrar</button>
+            </form>
+        </div>
+    </div>
+</div>
+</section>
